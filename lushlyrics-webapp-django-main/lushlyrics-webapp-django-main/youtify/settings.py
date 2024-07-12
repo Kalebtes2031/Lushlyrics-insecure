@@ -86,6 +86,8 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
+# AUTH_USER_MODEL = 'main.User'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -127,3 +129,13 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'kalebtesfaye2031@gmail.com'
+EMAIL_HOST_PASSWORD = 'kozn pybk vpev vtnc'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

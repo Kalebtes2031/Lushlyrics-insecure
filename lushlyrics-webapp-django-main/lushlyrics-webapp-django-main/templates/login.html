@@ -16,14 +16,11 @@
 </head>
 
 <body>
-
-
-			<div class="signup_header">
-                <a href="" target="_blank">
-				
-                    </a>
-            </div>
-        </a>
+    <div class="signup_header">
+        <a href="" target="_blank">
+        
+            </a>
+    </div>
         <div class="signup_body">
             <form class="login_form" method='POST' enctype="multipart/form-data">
                 {% csrf_token %}
@@ -43,15 +40,15 @@
                 {% endif %}
                 <button class='btn btn_log_in' type="submit">Log in</button>
                 <div class="divider"></div>
+                <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
+                <div class="divider"></div>
                 <p class='label center-align'>Don't have an account?</p>
-            <a class='btn btn_sign_up' href="/signup">Sign Up for Lushlyrics</a>
+                <a class='btn btn_sign_up' href="/register/">Sign Up for Lushlyrics</a>
             </form>
         </div>
-
         <!-- <div class="signin_body">
 
         </div> -->
-
     </body>
 </body>
 

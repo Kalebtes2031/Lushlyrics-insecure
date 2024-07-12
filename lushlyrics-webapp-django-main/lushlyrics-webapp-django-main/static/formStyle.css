@@ -37,7 +37,8 @@ body {
 }
 
 .signup_body,
-.login_form {
+.login_form,
+.pwdreset {
   background: white;
   height: 100%;
   display: flex;
